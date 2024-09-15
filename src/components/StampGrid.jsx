@@ -1,4 +1,4 @@
-// components/StampGrid.js
+
 import React from 'react';
 import StampCard from './StampCard';
 

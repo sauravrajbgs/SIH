@@ -1,4 +1,4 @@
-// components/StampCard.js
+
 import React from 'react';
 
 const StampCard = ({ stamp }) => {
