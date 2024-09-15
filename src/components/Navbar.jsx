@@ -1,6 +1,6 @@
 import React from 'react'
 import SearchBar from './SearchBar'
-
+import Link from 'next/link';
 
 
 
@@ -16,6 +16,12 @@ function Navbar() {
     "User 2",
     "User 3",
   ];
+
+  const user = {
+    name: 'John Doe',
+     image: 'https://randomuser.me/api/portraits/men/75.jpg', // Online profile image
+   };
+
   return (
     
     <div className='flex  p-3 items-center text-sm justify-between '>
@@ -24,14 +30,17 @@ function Navbar() {
         <SearchBar items={items}/>
         <div className='flex px-6 gap-6 font-medium text-gray-400'>
           <a className='cursor-pointer'>Virtual Exhibiton</a>
-          <a className='cursor-pointer'>Sell</a>
+          <Link href='/Seller' className='cursor-pointer'>Sell</Link>
           <a className='cursor-pointer'>Drop</a>
           <a className='cursor-pointer'>Spotlight</a>
         </div>   
         </div>   
         <div className='flex space-x-4 text-xs text-black font-bold'>
-            <div className='p-2 rounded-full bg-[#FFFFFF]'>SIGN IN</div>
-            <div className='p-2 rounded-full bg-[#FAFF02]'>SMARTSCAN</div>
+        <Link href='/Signin'><button className='p-2 rounded-full text-black bg-[#FFFFFF]'>SIGN IN</button></Link> 
+        <Link href='/AiScan'> <button className='p-2 rounded-full  bg-[#dadb72]'>SMARTSCAN</button></Link> 
+        <Link href='/SidebarDemo'> 
+        <img className='rounded-full w-10' src={user.image}/>
+       </Link>
         </div>
     </div>
     
