@@ -2,7 +2,7 @@
 
 import React from 'react'
 import { useState } from 'react';
-function page() {
+function Listproduct() {
     const [items, setItems] = useState([
         { id: 1, 
             
@@ -57,4 +57,4 @@ function page() {
   )
 }
 
-export default page
+export default Listproduct

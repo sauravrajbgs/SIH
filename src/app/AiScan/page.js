@@ -32,7 +32,7 @@ export default function AiScan() {
   };
 
   return (
-    <div>
+    <div className="h-full w-full">
       <h1>AI Scanner</h1>
       <UploadComponent onUpload={handleFileUpload} />
     </div>

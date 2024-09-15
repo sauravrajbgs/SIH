@@ -50,11 +50,11 @@ export const FileUpload = ({
   });
 
   return (
-    (<div className="w-full" {...getRootProps()}>
+    (<div className="w-full h-full" {...getRootProps()} >
       <motion.div
         onClick={handleClick}
         whileHover="animate"
-        className="p-10 group/file block rounded-lg cursor-pointer w-full relative overflow-hidden">
+        className="p-10 group/file block rounded-lg cursor-pointer w-full relative overflow-hidden h-full">
         <input
           ref={fileInputRef}
           id="file-upload-handle"
@@ -62,7 +62,7 @@ export const FileUpload = ({
           onChange={(e) => handleFileChange(Array.from(e.target.files || []))}
           className="hidden" />
         <div
-          className="absolute inset-0 [mask-image:radial-gradient(ellipse_at_center,white,transparent)]">
+          className="absolute inset-0 [mask-image:radial-gradient(ellipse_at_center,white,transparent)] w-full">
           <GridPattern />
         </div>
         <div className="flex flex-col items-center justify-center">
@@ -71,10 +71,10 @@ export const FileUpload = ({
             Upload file
           </p>
           <p
-            className="relative z-20 font-sans font-normal text-neutral-400 dark:text-neutral-400 text-base mt-2">
+            className="relative z-20 font-sans font-normal text-neutral-400 dark:text-neutral-400 text-base mt-2 h-full">
             Drag or drop your files here or click to upload
           </p>
-          <div className="relative w-full mt-10 max-w-xl mx-auto">
+          <div className="relative  mt-10 max-w-xl mx-auto h-full w-full">
             {files.length > 0 &&
               files.map((file, idx) => (
                 <motion.div
@@ -148,7 +148,7 @@ export const FileUpload = ({
             {!files.length && (
               <motion.div
                 variants={secondaryVariant}
-                className="absolute opacity-0 border border-dashed border-sky-400 inset-0 z-30 bg-transparent flex items-center justify-center h-32 mt-4 w-full max-w-[8rem] mx-auto rounded-md"></motion.div>
+                className="absolute opacity-0 border border-dashed border-sky-400 inset-0 z-30 bg-transparent flex items-center justify-center h-full mt-4  max-w-[8rem] mx-auto rounded-md w-full "></motion.div>
             )}
           </div>
         </div>
@@ -162,7 +162,7 @@ export function GridPattern() {
   const rows = 11;
   return (
     (<div
-      className="flex bg-gray-100 dark:bg-neutral-900 flex-shrink-0 flex-wrap justify-center items-center gap-x-px gap-y-px  scale-105">
+      className="flex bg-gray-100 dark:bg-neutral-900 flex-shrink-0 flex-wrap justify-center items-center gap-x-px gap-y-px  scale-105 h-full">
       {Array.from({ length: rows }).map((_, row) =>
         Array.from({ length: columns }).map((_, col) => {
           const index = row * columns + col;

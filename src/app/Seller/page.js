@@ -7,8 +7,8 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import { cn } from "@/lib/utils";
 import AddProduct from "@/components/Dashboard/AddProduct.jsx";
-import Profile from "@/components/Dashboard/Profile.jsx";
-import Settings from "@/components/Dashboard/Settings.jsx";
+import Listproduct from "@/components/Dashboard/Listproduct.jsx";
+import Vieworder from "@/components/Dashboard/Vieworder.jsx";
 import Dashboard from "@/components/Dashboard/Dashboard.jsx";
 
 
@@ -32,14 +32,14 @@ export default function SidebarDemo() {
       ),
     },
     {
-      label: "Profile",
+      label: "Listproduct",
       href: "#",
       icon: (
         <IconUserBolt className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0" />
       ),
     },
     {
-      label: "Settings",
+      label: "Vieworder",
       href: "#",
       icon: (
         <IconSettings className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0" />
@@ -63,10 +63,10 @@ export default function SidebarDemo() {
         return <Dashboard />;
       case "AddProduct":
         return <AddProduct />;
-      case "Profile":
-        return <Profile />;
-      case "Settings":
-        return <Settings />;
+      case "Listproduct":
+        return <Listproduct />;
+      case "Vieworder":
+        return <Vieworder />;
       default:
         return <Dashboard />;
     }
