@@ -1,17 +1,16 @@
 import Image from 'next/image';
-import { collections } from '@/utils/CollectionData';
 
-const MoreCollectionSlider = () => {
+const MoreCollectionSlider = ({collections}) => {
   return (
-    <div className="bg-[#191C1E] text-white p-8">
-      <h2 className="text-2xl font-semibold mb-6 flex justify-center items-center">More from this collection</h2>
+    <div className="bg-[rgb(25,28,30)] text-white p-8">
+      <h2 className="text-3xl font-semibold mb-6 flex justify-center items-center">More from this collection</h2>
       <div className="flex space-x-6 overflow-x-scroll scrollbar-hide w-full h-full">
         {collections.map((collection) => (
-          <div key={collection?.id} className="bg-[#191c1e] rounded-2xl w-[300px] flex-shrink-0 p-6 border border-opacity-10">
+          <div key={collection?.id} className="bg-[#191c1e] rounded-2xl w-[250px] flex-shrink-0 p-6 border border-opacity-10">
             <Image
               src={collection?.image}
               alt={collection?.title}
-              width={300}  
+              width={300} 
               height={150} 
               className="rounded-lg"
             />

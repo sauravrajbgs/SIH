@@ -1,17 +1,21 @@
 'use client'
 import React from 'react';
 import { Popup, usePopup } from '@/components/ui/popup';
+import { dummyStamps } from '@/utils/StampData';
+import StampDetails from './StampDetails';
+
 
 const StampCard = ({ stamp }) => {
   const { isPopUpOpen, togglePopUp } = usePopup();
   return (
     <>
       <Popup isPopUpOpen={isPopUpOpen} togglePopUp={togglePopUp}>
-        <div className='text-black'><h1>isme yuvika apna component render kar</h1></div>
-        
+        <div className='text-black'>
+          <StampDetails product={dummyStamps[0]} />
+        </div>
       </Popup>
       <div
-        className='bg-[#191C1E] p-2 border border-gray-300 border-opacity-10 rounded-md flex flex-col items-center space-y-4 text-sm  cursor-pointer' // Added cursor-pointer class here
+        className='bg-[#191C1E] p-2 border border-gray-300 border-opacity-10 rounded-md flex flex-col items-center space-y-4 text-sm  cursor-pointer' 
         onClick={togglePopUp}
       >
         <div className="bg-[#222528] text-white rounded-md flex w-full justify-center">
