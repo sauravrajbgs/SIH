@@ -82,7 +82,7 @@ function Navbar() {
               Sign in
             </button>
             <a href="/createaccount" className="text-indigo-600 text-sm hover:underline text-center align-middle">
-                Sign in as a rganisation?
+                Sign in as an Organisation?
               </a>
           </form>
           <div className="my-6 text-center">
