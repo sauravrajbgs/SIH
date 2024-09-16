@@ -7,7 +7,8 @@ const StampCard = ({ stamp }) => {
   return (
     <>
       <Popup isPopUpOpen={isPopUpOpen} togglePopUp={togglePopUp}>
-        <div>isme yuvika apna component render kar</div>
+        <div className='text-black'><h1>isme yuvika apna component render kar</h1></div>
+        
       </Popup>
       <div
         className='bg-[#191C1E] p-2 border border-gray-300 border-opacity-10 rounded-md flex flex-col items-center space-y-4 text-sm  cursor-pointer' // Added cursor-pointer class here

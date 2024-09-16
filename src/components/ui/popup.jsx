@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
-
+import { createPortal } from 'react-dom';
 
 export const usePopup = () => {
   const [isPopUpOpen, setIsPopUpOpen] = useState(false);
@@ -16,16 +16,24 @@ export const usePopup = () => {
 export const Popup = ({ isPopUpOpen, togglePopUp, children }) => {
   if (!isPopUpOpen) return null;
 
-  return (
-    <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
-      <div className="flex flex-col space-y-1 max-w-2xl ">
+
+  return createPortal(
+    <div
+      className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-[99999]"
+      style={{ zIndex: 99999, position: 'fixed' }}
+    >
+      <div className="flex flex-col space-y-1 max-w-2xl">
+        {/* Close button */}
         <div onClick={togglePopUp} className="cursor-pointer w-full flex justify-end ">
-        <img src="/images/cross.svg" alt="Close" />
+          <img src="/images/cross.svg" alt="Close" />
         </div>
-        <div className="bg-white relative w-auto md:max-h-[85vh] max-h-[60vh] overflow-auto p-6 ">
-          <div className="">{children}</div>
+
+        {/* Popup content */}
+        <div className="bg-white relative w-auto md:max-h-[85vh] max-h-[60vh] overflow-auto p-6">
+          <div>{children}</div>
         </div>
       </div>
-    </div>
+    </div>,
+    document.body
   );
 };
