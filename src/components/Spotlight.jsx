@@ -38,11 +38,11 @@ function Spotlight() {
       ];
     //grid-cols-1 md:grid-cols-3 gap-8   border-gray-300 rounded-md  p-x-3  gap-600
   return (
-    <div className="bg-[#FF7A0014] h-[943px]  p-[48px]w-full flex gap-28">
+    <div className="bg-[#FF7A0014] h-[943px]  p-[48px] w-full flex gap-28">
     {/* <div className="container px-4 py-7 bg-black">  */}
-    <div className=" w-[608px] h-[943px] ">
+    <div className=" w-[608px] h-[943px]">
         
-      <h1 className="text-3xl font-bold mb-8 ml-8 " >Spotlight</h1>
+      <h1 className="text-3xl font-bold mb-8 ml-8 italic" >Spotlight</h1>
       
        
        
@@ -61,7 +61,7 @@ function Spotlight() {
               alt={posts[0].title}
             />
           </a>
-          <p className="text-sm  mt-2 text-red-500 ml-5">Powered by Stampick</p>
+          <p className="text-sm  mt-2 text-pink-600 ml-10">POWERED BY STAMPICK</p>
           <h2 className="text-2xl font-bold mt-4 text-center">{posts[0].title}</h2>
           
           <p className="mt-2 text-gray-300 text-center">{posts[0].description}</p>
