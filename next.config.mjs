@@ -4,6 +4,7 @@ const nextConfig = {
   images: {
     domains: ['randomuser.me', 'assets.aceternity.com'], // Add the external domains here
   },
+ 
 };
 
 export default nextConfig;
