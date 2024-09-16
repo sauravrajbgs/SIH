@@ -83,7 +83,7 @@
   font-size: 1.5rem;
 }
 
-button {
+/* button {
   background-color: #ff7b00;
   color: white;
   border: none;
@@ -92,7 +92,8 @@ button {
 
 button:hover {
   background-color: #ff5700;
-}
+} */
+ 
 .add{
   width: 70%;
   margin-left: max(5vw ,25px);
