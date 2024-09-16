@@ -6,15 +6,9 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { cn } from "@/lib/utils";
-<<<<<<< HEAD
 import MyOrder from "@/components/Dashboard/MyOrder.jsx";
-import Profile from "@/components/Dashboard/Profile.jsx";
-import Settings from "@/components/Dashboard/Settings.jsx";
-=======
-import AddProduct from "@/components/Dashboard/AddProduct.jsx";
 import Listproduct from "@/components/Dashboard/Listproduct.jsx";
 import Vieworder from "@/components/Dashboard/Vieworder.jsx";
->>>>>>> 6e29d623ce0ccad5c2b51724009768bebe8e1e32
 import Dashboard from "@/components/Dashboard/Dashboard.jsx";
 
 

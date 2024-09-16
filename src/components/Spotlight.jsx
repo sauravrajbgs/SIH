@@ -32,6 +32,20 @@ function Spotlight() {
             category: "SPOTLIGHT",
             link:"https://google.com"
           },
+          {
+            title: "Britain's Royal Mail celebrates 65 years of Paddington",
+            description: "Sept. 5 issue celebrates Paddington.",
+            imageUrl: "https://www.linns.com/images/default-source/news/great-britain-2023-paddington-bear-stamps.jpg?sfvrsn=6c070ad1_4",
+            category: "SPOTLIGHT",
+            link:"https://google.com"
+          },
+          {
+            title: "Britain's Royal Mail celebrates 65 years of Paddington",
+            description: "Sept. 5 issue celebrates Paddington.",
+            imageUrl: "https://www.linns.com/images/default-source/news/great-britain-2023-paddington-bear-stamps.jpg?sfvrsn=6c070ad1_4",
+            category: "SPOTLIGHT",
+            link:"https://google.com"
+          },
          
        
         
