@@ -1,4 +1,4 @@
-import { Inter } from "next/font/google";
+import { Montserrat } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import 'slick-carousel/slick/slick.css';
@@ -6,10 +6,7 @@ import 'slick-carousel/slick/slick-theme.css';
 
 
 // Import Inter font
-const inter = Inter({
-  subsets: ["latin"],
-  variable: "--font-inter",
-});
+const inter = Montserrat({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Create Next App",
@@ -20,7 +17,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" class="dark">
       <body className={`${inter.variable} antialiased`}>
-        <Navbar />
+        <div className="sticky px-2">
+        <Navbar/>
+        </div>
         {children}
       </body>
     </html>
