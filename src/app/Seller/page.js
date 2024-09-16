@@ -6,9 +6,15 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { cn } from "@/lib/utils";
+<<<<<<< HEAD
 import MyOrder from "@/components/Dashboard/MyOrder.jsx";
 import Profile from "@/components/Dashboard/Profile.jsx";
 import Settings from "@/components/Dashboard/Settings.jsx";
+=======
+import AddProduct from "@/components/Dashboard/AddProduct.jsx";
+import Listproduct from "@/components/Dashboard/Listproduct.jsx";
+import Vieworder from "@/components/Dashboard/Vieworder.jsx";
+>>>>>>> 6e29d623ce0ccad5c2b51724009768bebe8e1e32
 import Dashboard from "@/components/Dashboard/Dashboard.jsx";
 
 
@@ -58,14 +64,22 @@ export default function SidebarDemo() {
    
   
     {
+<<<<<<< HEAD
       label: "Profile ",
+=======
+      label: "Listproduct",
+>>>>>>> 6e29d623ce0ccad5c2b51724009768bebe8e1e32
       href: "#",
       icon: (
         <IconUserBolt className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0" />
       ),
     },
     {
+<<<<<<< HEAD
       label: "Manage Address",
+=======
+      label: "Vieworder",
+>>>>>>> 6e29d623ce0ccad5c2b51724009768bebe8e1e32
       href: "#",
       // icon: (
       //   <IconSettings className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0" />
@@ -152,12 +166,21 @@ const logout = [
     switch (activeLabel) {
       case "":
         return <Dashboard />;
+<<<<<<< HEAD
       case "MyOrder":
         return <MyOrder />;
       case "Profile":
         return <Profile />;
       case "Settings":
         return <Settings />;
+=======
+      case "AddProduct":
+        return <AddProduct />;
+      case "Listproduct":
+        return <Listproduct />;
+      case "Vieworder":
+        return <Vieworder />;
+>>>>>>> 6e29d623ce0ccad5c2b51724009768bebe8e1e32
       default:
         return <Dashboard />;
     }

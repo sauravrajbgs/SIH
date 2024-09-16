@@ -5,6 +5,7 @@ function Dashboard() {
 
   
   return (
+<<<<<<< HEAD
     <div class="isolate  px-3  bg-white  w-full ">
  <div className='mx-auto max-w-2xl text-center m-3'>
        <h2 class="text-3xl font-bold tracking-tight text-black sm:text-4xl">Personal Information</h2>
@@ -133,6 +134,9 @@ function Dashboard() {
   </form>
     </div>
    
+=======
+    <div>Hello</div>
+>>>>>>> 6e29d623ce0ccad5c2b51724009768bebe8e1e32
   )
 }
 

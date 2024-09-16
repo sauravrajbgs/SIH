@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 
-function page() {
+function Vieworder() {
     const [order, setOrder] = useState(
        
       {
@@ -92,4 +92,4 @@ function page() {
   )
 }
 
-export default page
+export default Vieworder
