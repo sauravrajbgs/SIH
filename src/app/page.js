@@ -7,8 +7,8 @@ export default function Home() {
   return (
     <>
     <div className="px-3">
-    <div className="h-[80vh] p-3 mb-10">
-      <div className="rounded-lg overflow-hidden relative h-[80vh]">
+    <div className="h-[100vh] p-3 mb-10">
+      <div className="rounded-lg overflow-hidden relative h-[100vh]">
       <SwiperComponent/>
       </div>
       </div>
