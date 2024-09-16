@@ -2,7 +2,8 @@ export const dummyStamps = [
   {
       id: 1,
       title: 'Legendary Poets of Odisha',
-      image: '/images/image0.svg',
+      image: '/images/image0.jpg',
+     
       minting: 'Now',
       price: 500,
       rarity: 55,
@@ -16,7 +17,7 @@ export const dummyStamps = [
   {
       id: 2,
       title: 'Gopabandhu Das',
-      image: '/images/image0.svg',
+      image: '/images/image1.jpg',
       minting: 'Now',
       price: 300,
       rarity: 45,
@@ -30,7 +31,7 @@ export const dummyStamps = [
   {
       id: 3,
       title: 'Srila Bhaktisiddhanta Saraswati Prabhupada',
-      image: '/images/image0.svg',
+      image: '/images/image2.jpg',
       minting: 'Now',
       price: 250,
       rarity: 60,
@@ -44,7 +45,7 @@ export const dummyStamps = [
   {
       id: 4,
       title: '100th Birth Anniversary of Karpoor Thakur',
-      image: '/images/image0.svg',
+      image: '/images/image3.jpg',
       minting: 'Now',
       price: 600,
       rarity: 70,
@@ -58,7 +59,7 @@ export const dummyStamps = [
   {
       id: 5,
       title: 'North-East Monument Collection Postcards - Set of 10',
-      image: '/images/image0.svg',
+      image: '/images/image4.jpg',
       minting: 'Now',
       price: 349,
       rarity: 50,
@@ -72,7 +73,7 @@ export const dummyStamps = [
   {
       id: 6,
       title: 'Botanicals - Water Colour Collection Postcards - Set of 8',
-      image: '/images/image0.svg',
+      image: '/images/image5.jpg',
       minting: 'Now',
       price: 349,
       rarity: 55,
@@ -86,7 +87,7 @@ export const dummyStamps = [
   {
       id: 7,
       title: 'Objects of Assam Collection Postcards - Set of 6',
-      image: '/images/image0.svg',
+      image: '/images/image6.jpg',
       minting: 'Now',
       price: 359,
       rarity: 65,
@@ -100,7 +101,7 @@ export const dummyStamps = [
   {
       id: 8,
       title: 'North-East Orchids Collection Postcards - Set of 10',
-      image: '/images/image0.svg',
+      image: '/images/image7.jpg',
       minting: 'In 2 days',
       price: 469,
       rarity: 75,
