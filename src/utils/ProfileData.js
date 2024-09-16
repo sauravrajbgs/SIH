@@ -1,7 +1,7 @@
 export const user = [
   {
     id: 1,
-    name: "Gunjan",
+    name: "Shuvro",
     profileImage: "/images/profile.svg", 
     followers: "5.7K",
     following: "100",
@@ -11,7 +11,7 @@ export const user = [
   },
   {
     id: 2,
-    name: "Nazia",
+    name: "Gunjan",
     profileImage: "/images/profile.svg",
     followers: "2.4K",
     following: "200",
