@@ -20,7 +20,7 @@ export default function App() {
   };
   return (
     <>
-    <div className='z-[-100]'>
+    <div className=''>
       <Swiper
         spaceBetween={30}
         centeredSlides={true}
