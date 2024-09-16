@@ -2,7 +2,7 @@ import React from 'react'
 
 function PhilatelicResources() {
   return (
-    <div className="bg-indigo-900  flex  items-start justify-start  ">
+    <div className="bg-[#282C4B] w-114xl h-56xl p-3xl flex  items-start justify-start rounded-3xl ">
    <div className=' pt-32'>
    <div className="text-white text-3xl font-bold mb-8 text-left w-full max-w-5xl px-4">
       PHILATELIC VIDEOS AND RESOURCES FOR OUR COMMUNITY
