@@ -8,7 +8,7 @@ const MoreCollectionSlider = () => {
       <h2 className="text-2xl font-semibold mb-6 flex justify-center items-center">More from this collection</h2>
       <div className="flex space-x-6 overflow-x-scroll scrollbar-hide w-full">
         {dummyStamps.map((stamp) => (
-          <div className="min-w-[240px] transform hover:scale-105 transition duration-300 ease-in-out">
+          <div className="min-w-[240px]">
             <StampCard stamp={stamp} key={stamp.id} />
           </div>
         ))}

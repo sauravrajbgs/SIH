@@ -59,7 +59,7 @@ const UserStampCollections = ({user, collections}) => {
             {/* Collection card grid */}
             <div className="grid grid-cols-5 gap-7 m-10 -mt-3">
                 {collections.map((collection) => (
-                    <div key={collection.id} className="bg-gray-700 w-full h-full shadow-lg overflow-hidden transform hover:scale-105 transition duration-300 ease-in-out rounded-xl">
+                    <div key={collection.id} className="bg-gray-700 w-full h-full shadow-lg overflow-hidden rounded-xl">
                         <StampCard stamp={collection} />
                     </div>
                 ))}
