@@ -14,7 +14,7 @@ const StampCard = ({ stamp }) => {
         </div>
       </Popup>
       <div
-        className='bg-[#191C1E] p-2 border h-full border-gray-300 border-opacity-10 rounded-md flex flex-col items-center space-y-4 text-sm  cursor-pointer' 
+        className='bg-[#191C1E] p-2 border h-full border-gray-300 border-opacity-10 rounded-md flex flex-col items-center space-y-4 text-sm  cursor-pointer transform hover:scale-105 transition duration-300 ease-in-out' 
         onClick={togglePopUp}
       >
         <div className="bg-[#222528] text-white rounded-md flex w-full justify-center">
