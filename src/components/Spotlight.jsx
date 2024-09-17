@@ -78,7 +78,10 @@ function Spotlight() {
               alt={posts[0].title}
             />
              <p className="text-sm text-[#783A73] mt-2">Powered by Stampick</p>
-            <h2 className="text-4xl font-bold mt-4">{posts[0].title}</h2>
+             <a href='https://economictimes.indiatimes.com/news/politics-and-nation/india-post-to-release-stamps-on-ramayana-mahabharata-ravi-shankar-prasad/articleshow/48775918.cms?from=mdr'>
+             <h2 className="text-4xl font-bold mt-4">{posts[0].title}</h2>
+             </a>
+           
            
             <p className=" text-gray-300 mt-3">{posts[0].description}</p>
           </div>
@@ -89,7 +92,10 @@ function Spotlight() {
               <div className='border-b pt-4 py-2  border-gray-300 border-opacity-10'>
                 <div className='mt-2 text-[#786B3A]'>SPOTLIGHT</div>
                 <div className='text-1.2xl'>
+                  <a href='https://economictimes.indiatimes.com/news/politics-and-nation/india-post-to-release-stamps-on-ramayana-mahabharata-ravi-shankar-prasad/articleshow/48775918.cms?from=mdr '>
                   <h4>Britain's Royal Mail celebrates 65 Britain's Royal Mail celebrates 65 </h4>
+                  </a>
+                 
                 </div>
               </div>
               <div className='  '>
@@ -100,7 +106,24 @@ function Spotlight() {
               <div className='border-b pt-4 py-2  border-gray-300 border-opacity-10'>
                 <div className='mt-2 text-[#786B3A]'>SPOTLIGHT</div>
                 <div className='text-1.2xl'>
+                <a href='https://economictimes.indiatimes.com/news/politics-and-nation/india-post-to-release-stamps-on-ramayana-mahabharata-ravi-shankar-prasad/articleshow/48775918.cms?from=mdr'>
+                  <h4 className=''>Britain’s Royal Mail celebrates 65 years of Paddington with Sept. 5 issue </h4>
+                  </a>
+                </div>
+              </div>
+              <div className='  '>
+                <img className='h-[115px] w-[240px] rounded-[14px] size-cover' src='https://www.linns.com/images/default-source/news/great-britain-2023-paddington-bear-stamps.jpg?sfvrsn=6c070ad1_4'/>
+
+
+              </div>
+            </div>
+            <div className='flex gap-3 mt-6 '>
+              <div className='border-b pt-4 py-2  border-gray-300 border-opacity-10'>
+                <div className='mt-2 text-[#786B3A]'>SPOTLIGHT</div>
+                <div className='text-1.2xl'>
+                <a href='https://economictimes.indiatimes.com/news/politics-and-nation/india-post-to-release-stamps-on-ramayana-mahabharata-ravi-shankar-prasad/articleshow/48775918.cms?from=mdr'>
                   <h4>Britain's Royal Mail celebrates 65 Britain's Royal Mail celebrates 65 </h4>
+                  </a>
                 </div>
               </div>
               <div className='  '>
@@ -111,7 +134,9 @@ function Spotlight() {
               <div className='border-b pt-4 py-2  border-gray-300 border-opacity-10'>
                 <div className='mt-2 text-[#786B3A]'>SPOTLIGHT</div>
                 <div className='text-1.2xl'>
+                <a href='https://economictimes.indiatimes.com/news/politics-and-nation/india-post-to-release-stamps-on-ramayana-mahabharata-ravi-shankar-prasad/articleshow/48775918.cms?from=mdr'>
                   <h4>Britain's Royal Mail celebrates 65 Britain's Royal Mail celebrates 65 </h4>
+                  </a>
                 </div>
               </div>
               <div className='  '>
@@ -122,18 +147,9 @@ function Spotlight() {
               <div className='border-b pt-4 py-2  border-gray-300 border-opacity-10'>
                 <div className='mt-2 text-[#786B3A]'>SPOTLIGHT</div>
                 <div className='text-1.2xl'>
+                <a href='https://economictimes.indiatimes.com/news/politics-and-nation/india-post-to-release-stamps-on-ramayana-mahabharata-ravi-shankar-prasad/articleshow/48775918.cms?from=mdr'>
                   <h4>Britain's Royal Mail celebrates 65 Britain's Royal Mail celebrates 65 </h4>
-                </div>
-              </div>
-              <div className='  '>
-                <img className='h-[115px] w-[240px] rounded-[14px]' src='https://www.linns.com/images/default-source/news/great-britain-2023-paddington-bear-stamps.jpg?sfvrsn=6c070ad1_4'/>
-              </div>
-            </div>
-            <div className='flex gap-3 mt-6 '>
-              <div className='border-b pt-4 py-2  border-gray-300 border-opacity-10'>
-                <div className='mt-2 text-[#786B3A]'>SPOTLIGHT</div>
-                <div className='text-1.2xl'>
-                  <h4>Britain's Royal Mail celebrates 65 Britain's Royal Mail celebrates 65 </h4>
+                  </a>
                 </div>
               </div>
               <div className='  '>
