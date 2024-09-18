@@ -2,7 +2,7 @@
 import React from 'react'
 import { useState } from 'react';
 
-function page() {
+function Page() {
     const [emailSent, setEmailSent] = useState(false);
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
@@ -114,4 +114,4 @@ function page() {
   );
 }
 
-export default page
+export default Page
