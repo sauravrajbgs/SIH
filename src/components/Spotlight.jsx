@@ -1,5 +1,5 @@
 import { Link } from 'lucide-react';
-import React from 'react'
+import React from 'react';
 
 function Spotlight() {
     const posts = [

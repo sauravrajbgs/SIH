@@ -11,24 +11,24 @@ const UserStampCollections = ({user, collections}) => {
                 <div className="flex justify-between items-center mt-10 ml-5">
                     {/* Left Section: Tabs */}
                     <div className="flex space-x-6 text-sm text-gray-400">
-                    <button className="flex items-center space-x-1 focus:outline-none text-white border-b-4 border-white pb-1">
+                    <button className="text-base flex items-center space-x-1 focus:outline-none text-white border-b-4 border-white pb-1">
                         <span>Owned</span>
                         <span className="bg-white text-xs font-bold px-1.5 py-0.5 rounded-xl text-black">{user.ownedStamps}</span>
                     </button>
-                    <button className="flex items-center space-x-1 focus:outline-none">
+                    <button className="text-base flex items-center space-x-1 focus:outline-none">
                         <span>On Sale</span>
                         <span className="bg-[#2b2c2d] text-xs px-2 py-0.5 rounded-xl text-white">{user.onSaleStamps}</span>
                     </button>
-                    <button className="focus:outline-none">Collections</button>
-                    <button className="focus:outline-none">Created</button>
-                    <button className="focus:outline-none">Activity</button>
-                    <button className="flex items-center focus:outline-none">
+                    <button className="text-base focus:outline-none">Collections</button>
+                    <button className="text-base focus:outline-none">Created</button>
+                    <button className="text-base focus:outline-none">Activity</button>
+                    <button className="text-base flex items-center focus:outline-none">
                         <span>More</span>
                         <img src='/images/dropdown.svg' className="m-2"/>
                     </button>
                     </div>
 
-                    {/* Right Section: Filters, Sorting, and View Options */}
+                    {/* Right Section */}
                     <div className="flex space-x-4 items-center">
 
                         {/* Dropdown for sorting */}
@@ -59,7 +59,7 @@ const UserStampCollections = ({user, collections}) => {
             {/* Collection card grid */}
             <div className="grid grid-cols-5 gap-7 m-10 -mt-3">
                 {collections.map((collection) => (
-                    <div key={collection.id} className="bg-gray-700 w-full h-full shadow-lg overflow-hidden transform hover:scale-105 transition duration-300 ease-in-out rounded-xl">
+                    <div key={collection.id} className="bg-gray-700 w-full h-full shadow-lg overflow-hidden rounded-xl">
                         <StampCard stamp={collection} />
                     </div>
                 ))}
