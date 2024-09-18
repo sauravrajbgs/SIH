@@ -119,12 +119,7 @@ export default function SidebarDemo() {
     switch (activeLabel) {
       case "MyOrder":
         return <MyOrder />;
-      case "Profile":
-        return <Profile />;
-      case "Settings":
-        return <Settings />;
-      case "AddProduct":
-        return <AddProduct />;
+     
       case "Listproduct":
         return <Listproduct />;
       case "Vieworder":
