@@ -26,8 +26,7 @@ function Navbar() {
       {/* Popup Component */}
       <Popup isPopUpOpen={isPopUpOpen} togglePopUp={togglePopUp}>
         <div className="fixed inset-0 bg-black bg-opacity-40 flex items-center justify-center z-50">
-          <div className="relative flex flex-col md:flex-row w-[95vw] md:w-[60vw] bg-white  shadow-2xl mx-auto overflow-hidden transform transition-all duration-300 scale-100">
-            
+          <div className="relative flex flex-col md:flex-row w-[95vw] md:w-[60vw] bg-white shadow-2xl mx-auto overflow-hidden transform transition-all duration-300 scale-100">
             {/* Close Button (X) */}
             <button
               onClick={togglePopUp}
@@ -39,22 +38,22 @@ function Navbar() {
             </button>
 
             {/* Left Side: Image Section */}
-            <div className="hidden md:flex md:w-1/2 bg-gray-100">
+            <div className="hidden md:flex md:w-1/2 bg-white items-center justify-center ml-4">
               <img
                 src="https://as1.ftcdn.net/v2/jpg/09/48/49/10/1000_F_948491028_hT5MoRnZkLn6fpDmlimYVFlE3mOoLoN6.jpg"
                 alt="Stamp Magnifying Glass"
-                className="object-cover w-full h-full"
+                className="object-cover w-[90%] h-[90%] rounded-lg"
               />
             </div>
 
             {/* Right Side: Form Section */}
-            <div className="flex-1 p-8">
-              <h2 className="text-3xl font-bold mb-8 text-center text-gray-800">Sign in</h2>
+            <div className="flex-1 p-8 mr-2 mt-2">
+              <h2 className="text-3xl font-bold mb-8 text-center text-gray-800">Sign In</h2>
               <form className="space-y-5">
                 
                 {/* Email Input */}
                 <div>
-                  <label className="block mb-2 text-sm font-medium text-gray-700" htmlFor="email">
+                  <label className="block mb-2 text-md font-medium text-gray-700" htmlFor="email">
                     Email
                   </label>
                   <input
@@ -66,7 +65,7 @@ function Navbar() {
 
                 {/* Password Input */}
                 <div>
-                  <label className="block mb-2 text-sm font-medium text-gray-700" htmlFor="password">
+                  <label className="block mb-2 text-md font-medium text-gray-700" htmlFor="password">
                     Password
                   </label>
                   <input
@@ -97,25 +96,27 @@ function Navbar() {
                 </a>
               </form>
 
-              {/* Or Divider */}
-              <div className="my-6 text-center">
-                <span className="text-md text-gray-800">Or</span>
-              </div>
+  {/* Or Divider */}
+  <div className="flex items-center my-6">
+    <div className="flex-grow border-t border-gray-300"></div>
+    <span className="text-md text-gray-800 mx-4">Or</span>
+    <div className="flex-grow border-t border-gray-300"></div>
+  </div>
 
-              {/* Google Sign in Button */}
-              <button className="w-full flex items-center justify-center text-gray-900 font-semibold bg-white border border-gray-300 py-3 rounded-md hover:bg-gray-100 transition duration-200">
-                <img
-                  src="https://img.icons8.com/color/16/000000/google-logo.png"
-                  alt="Google Icon"
-                  className="mr-2"
-                />
-                Sign in with Google
-              </button>
-            </div>
+  {/* Google Sign in Button */}
+  <button className="w-full flex items-center justify-center text-gray-900 font-semibold bg-white border border-gray-300 py-3 rounded-md hover:bg-gray-100 transition duration-200">
+    <img
+      src="https://img.icons8.com/color/16/000000/google-logo.png"
+      alt="Google Icon"
+      className="mr-2"
+    />
+    Sign in with Google
+  </button>
+</div>
+
           </div>
         </div>
       </Popup>
-
 
       <div className="flex p-3 items-center text-sm justify-between">
         <div className="flex space-x-4 items-center">

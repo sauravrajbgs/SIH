@@ -28,23 +28,13 @@ function Spotlight() {
   ];
 
   return (
-    <div className="w-full h-[943px] bg-[#FF7A0014]">
-      <div className="mx-5 mt-10">
-        <h1 className="text-3xl font-bold">Spotlight</h1>
-      </div>
-      <div className="ml-5 flex justify-between border-b py-4 border-gray-300 border-opacity-10">
-        <ul className="flex gap-4">
-          <li>All</li>
-          <li>News</li>
-          <li>Interviews</li>
-          <li>Insights</li>
-        </ul>
-        <p className="pr-3">View latest post --</p>
-      </div>
-      
-      <div className="w-full flex gap-32 mt-4">
-        {/* Main Post */}
-        <div className="w-[608px]">
+    <div className="bg-[#FF7A0014] h-[943px]  p-[48px] w-full flex gap-28">
+    {/* <div className="container px-4 py-7 bg-black">  */}
+    <div className=" w-[608px] h-[943px]">
+        
+      <h1 className="text-3xl font-bold mb-8 ml-8 italic" >Spotlight</h1>
+        {/* <div className="md:col-span-2 "> */}
+          {/* Wrap Image in an <a> tag to make it clickable */}
           <a href="https://economictimes.indiatimes.com/news/politics-and-nation/india-post-to-release-stamps-on-ramayana-mahabharata-ravi-shankar-prasad/articleshow/48775918.cms?from=mdr" target="_blank" rel="noopener noreferrer">
             <img className="rounded-lg w-[608px] h-auto" src={posts[0].imageUrl} alt={posts[0].title} />
           </a>
