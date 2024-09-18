@@ -166,14 +166,19 @@ export default function SidebarDemo() {
                 />
               ))}
             </div>
-            <div className="mt-8 flex flex-col gap-2 w-full  text-gray-900 shadow-sm">
-              {wallet.map((link) => (
-                <div key={link.label} className="flex justify-between items-center p-2 border-opacity-10">
-                  <SidebarLink link={link} onClick={() => setActiveLabel(link.label)} />
-                  <span className="font-medium text-yellow-400 hidden hove ">{link.price}</span>
-                </div>
-              ))}
-            </div>
+            <div className="mt-8 flex flex-col gap-2 w-full text-gray-900 shadow-sm">
+  {wallet.map((link) => (
+    <SidebarLink
+      key={link.label}
+      link={link}
+      onClick={() => setActiveLabel(link.label)}
+      className="flex  items-center" 
+    >
+      <span>{link.label}</span>
+      <span className="font-medium text-yellow-400">{link.price}</span>
+    </SidebarLink>
+  ))}
+</div>
             <div className="mt-8 flex flex-col gap-2  w-full  text-gray-900 shadow-sm">
               {myStuff.map((link) => (
                 <SidebarLink key={link.label} link={link} onClick={() => setActiveLabel(link.label)} />
@@ -219,7 +224,13 @@ const Logo = () => {
 const LogoIcon = () => {
   return (
     <Link href="#" className="font-normal flex space-x-2 items-center text-sm text-black py-1 relative">
-      <div className="h-5 w-6 bg-black dark:bg-white rounded-br-lg rounded-tr-sm rounded-tl-lg rounded-bl-sm flex-shrink-0" />
+      <Image
+        src="https://assets.aceternity.com/manu.png" // Your profile picture URL here
+        className="h-7 w-7 flex-shrink-0 rounded-full"
+        width={50}
+        height={50}
+        alt="Avatar"
+      />
     </Link>
   );
 };
