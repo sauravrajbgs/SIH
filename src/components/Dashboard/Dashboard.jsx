@@ -1,8 +1,6 @@
-
-
 function Dashboard() {
   return (
-    <div className=" px-3 bg-white w-full">
+    <div className="px-3 bg-white w-full">
       <div className="mx-auto m-3">
         <h2 className="text-3xl font-bold tracking-tight text-black sm:text-4xl">
           Personal Information
@@ -118,7 +116,7 @@ function Dashboard() {
 
           {/* FAQs Section */}
           <div className="sm:col-span-2">
-            <div className=" mx-auto p-6 mt-0">
+            <div className="mx-auto p-6 mt-0">
               <h2 className="text-2xl font-bold mt-0">FAQs</h2>
               <div className="space-y-4">
                 <div>
@@ -128,7 +126,7 @@ function Dashboard() {
                   </h3>
                   <p className="text-gray-700 mt-0 text-sm">
                     Your login email id (or mobile number) changes, likewise.
-                    You'll receive all your account-related communication on
+                    You&#39;ll receive all your account-related communication on
                     your updated email address (or mobile number).
                   </p>
                 </div>
