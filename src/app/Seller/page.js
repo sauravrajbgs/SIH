@@ -192,7 +192,7 @@ export default function SidebarDemo() {
           </div>
         </SidebarBody>
       </Sidebar>
-      <div className="flex w-full bg-[#171717]">
+      <div className="flex w-full bg-[#171717] ">
         <div className="w-full flex">
         {renderContent()}
         </div>
