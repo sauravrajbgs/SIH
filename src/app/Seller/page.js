@@ -140,7 +140,7 @@ export default function SidebarDemo() {
   return (
     <div
       className={cn(
-        " flex flex-col md:flex-row bg-gray-100 dark:bg-neutral-800  flex-1   mx-auto border border-neutral-200 dark:border-neutral-700  w-full-bborder-b-2  text-gray-900 shadow-sm  ring-gray-300",
+        "flex flex-col md:flex-row bg-gray-100 dark:bg-neutral-800  flex-1   mx-auto border border-neutral-200 dark:border-neutral-700  text-gray-900 ",
         
       )}
     >
@@ -192,7 +192,11 @@ export default function SidebarDemo() {
           </div>
         </SidebarBody>
       </Sidebar>
-      <div className="flex flex-1 bg-[#171717]">{renderContent()}</div>
+      <div className="flex w-full bg-[#171717]">
+        <div className="w-full flex">
+        {renderContent()}
+        </div>
+        </div>
       </div>
   );
 }

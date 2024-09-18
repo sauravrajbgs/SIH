@@ -1,14 +1,14 @@
-import React, { useState } from "react";
+
 
 function Dashboard() {
   return (
-    <div className="isolate px-3 bg-white w-full">
-      <div className="mx-auto max-w-2xl text-center m-3">
+    <div className=" px-3 bg-white w-full">
+      <div className="mx-auto m-3">
         <h2 className="text-3xl font-bold tracking-tight text-black sm:text-4xl">
           Personal Information
         </h2>
       </div>
-      <form action="#" method="POST" className="mx-auto mt-8 max-w-xl sm:mt-4">
+      <form action="#" method="POST" className="mx-auto mt-8 sm:mt-4">
         <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2 mt-4">
           <div>
             <label
@@ -118,7 +118,7 @@ function Dashboard() {
 
           {/* FAQs Section */}
           <div className="sm:col-span-2">
-            <div className="max-w-4xl mx-auto p-6 mt-0">
+            <div className=" mx-auto p-6 mt-0">
               <h2 className="text-2xl font-bold mt-0">FAQs</h2>
               <div className="space-y-4">
                 <div>

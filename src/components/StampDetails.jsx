@@ -72,16 +72,16 @@ const StampDetails = ({ product }) => {
                     {product?.likes}
                   </div>
                   <div className="flex items-center m-3">
-                    <img src="/images/Share.svg" className="m-2" />
+                    <img src="/images/Share.svg" alt="fr" className="m-2" />
                     Share
                   </div>
                   <div className="flex items-center m-3">
-                    <img src="/images/Refresh.svg" className="m-1" />
+                    <img src="/images/Refresh.svg" alt="fr" className="m-1" />
                     Refresh
                   </div>
                 </div>
                 <div className="m-3">
-                  <img src="/images/Ellipsis.svg" className="m-1" />
+                  <img src="/images/Ellipsis.svg" alt="fr" className="m-1" />
                 </div>
               </div>
               {/* Price */}
@@ -122,27 +122,27 @@ const StampDetails = ({ product }) => {
                 <h2 className="text-lg font-semibold text-white mb-3">Details</h2>
                 <div className="bg-[#191c1e] p-3 rounded-md mb-3 border border-gray-700">
                   <div className="flex items-center text-white mb-2">
-                    <img src="/images/aptos.svg" className="m-2" />
+                    <img src="/images/aptos.svg" alt="fr" className="m-2" />
                     <span className="text-gray-200 text-sm">
                       {product?.shortTitle}
                     </span>
                   </div>
                   <div className="flex items-center text-white mb-2">
-                    <img src="/images/aptos.svg" className="m-2" />
+                    <img src="/images/aptos.svg" alt="fr" className="m-2" />
                     <span className="text-gray-200 text-sm">
                       Release Date: {product?.releaseDate}
                     </span>
-                    <img src="/images/chevron.svg" className="m-2" />
+                    <img src="/images/chevron.svg" alt="fr" className="m-2" />
                   </div>
                   <div className="flex items-center text-white">
-                    <img src="/images/view.svg" className="m-2" />
+                    <img src="/images/view.svg" alt="fr" className="m-2" />
                     <span className="text-gray-200 text-sm">View</span>
-                    <img src="/images/chevron.svg" className="m-2" />
+                    <img src="/images/chevron.svg" alt="fr" className="m-2" />
                   </div>
                   {/* Partition line */}
                   <div className="border border-gray-700 m-3"></div>
                   <div className="text-gray-300 flex flex-row mt-4 text-sm">
-                    <img src="/images/Refresh.svg" className="m-1" />
+                    <img src="/images/Refresh.svg" alt="fr" className="m-1" />
                     {product?.numOfReviews} reviews
                   </div>
                 </div>

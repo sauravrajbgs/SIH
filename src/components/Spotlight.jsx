@@ -65,7 +65,7 @@ function Spotlight() {
                 </div>
               </div>
               <div className=' h-[115px] w-[240px]  '>
-                <img className='rounded-[14px] ' src='https://www.linns.com/images/default-source/news/great-britain-2023-paddington-bear-stamps.jpg?sfvrsn=6c070ad1_4'/>
+                <img className='rounded-[14px] ' src='https://www.linns.com/images/default-source/news/great-britain-2023-paddington-bear-stamps.jpg?sfvrsn=6c070ad1_4' alt="fr"/>
               </div>
               
               
@@ -86,7 +86,7 @@ function Spotlight() {
                 </div>
               </div>
               <div className=' h-[115px] w-[240px]  '>
-                <img className='rounded-[14px] ' src='https://www.linns.com/images/default-source/news/great-britain-terry-pratchett-discworld-first-class-stamps.tmb-slide-1900.jpg?sfvrsn=c7f80bd1_4'/>
+                <img className='rounded-[14px] ' src='https://www.linns.com/images/default-source/news/great-britain-terry-pratchett-discworld-first-class-stamps.tmb-slide-1900.jpg?sfvrsn=c7f80bd1_4' alt="fr"/>
               </div>
               
               
@@ -107,7 +107,7 @@ function Spotlight() {
                 </div>
               </div>
               <div className=' h-[115px] w-[240px]  '>
-                <img className='rounded-[14px] ' src='https://www.linns.com/images/default-source/news/germany-1933-richard-wagner-operas-semipostal-stamp.jpg?sfvrsn=2eae0bd1_4'/>
+                <img className='rounded-[14px] ' src='https://www.linns.com/images/default-source/news/germany-1933-richard-wagner-operas-semipostal-stamp.jpg?sfvrsn=2eae0bd1_4' alt="fr"/>
               </div>
               
               
@@ -128,7 +128,7 @@ function Spotlight() {
                 </div>
               </div>
               <div className=' h-[115px] w-[240px]  '>
-                <img className='rounded-[14px] ' src='https://www.linns.com/images/default-source/news/stampex-international-stamp-show-exhibition08a9664011176df9aa55ff0000be2468.jpg?sfvrsn=e6be0bd1_2'/>
+                <img className='rounded-[14px] ' src='https://www.linns.com/images/default-source/news/stampex-international-stamp-show-exhibition08a9664011176df9aa55ff0000be2468.jpg?sfvrsn=e6be0bd1_2' alt="fr"/>
               </div>
               
               
@@ -149,7 +149,7 @@ function Spotlight() {
                 </div>
               </div>
               <div className=' h-[115px] w-[240px]  '>
-                <img className='rounded-[14px] ' src='https://www.linns.com/images/default-source/news/iceland-2023-150th-annversary-first-stamps-souvenir-sheet.jpg?sfvrsn=5e1e0ad1_4'/>
+                <img className='rounded-[14px] ' src='https://www.linns.com/images/default-source/news/iceland-2023-150th-annversary-first-stamps-souvenir-sheet.jpg?sfvrsn=5e1e0ad1_4' alt="fr"/>
               </div>
               
               
