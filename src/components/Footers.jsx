@@ -30,7 +30,7 @@ function Footers() {
             <li className="mb-2">
               <a href="#" className="hover:text-white flex items-center">
                 Jobs
-                <span className="bg-gray-600 text-xs text-white ml-2 px-2 py-1 rounded">We're hiring!</span>
+                <span className="bg-gray-600 text-xs text-white ml-2 px-2 py-1 rounded">We&apos;re hiring!</span>
               </a>
             </li>
             <li className="mb-2">

@@ -42,7 +42,7 @@ const UserStampCollections = ({user, collections}) => {
                         {/* Grid/List View Buttons */}
                         <div className="flex space-x-2">
                             <button className="w-10 h-10 bg-[#242527] flex justify-center items-center rounded-xl">
-                            <img src='/images/4grid.svg'/>
+                            <img src='/images/4grid.svg' alt='fr'/>
                             </button>
                             <button className="w-10 h-10 bg-[#242527] flex justify-center items-center rounded-xl">
                                 <img src='/images/9grid.svg' alt="fr"/>
