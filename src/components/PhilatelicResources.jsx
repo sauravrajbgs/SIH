@@ -2,7 +2,7 @@ import React from 'react'
 
 function PhilatelicResources() {
   return (
-    <div className="bg-[#282C4B] w-114xl h-56xl p-3xl flex  items-start justify-start rounded-3xl ">
+    <div className="bg-[#282C4B] w-full h-[682px] p-[32px] flex  items-start justify-start rounded-[24px] ">
    <div className=' pt-32'>
    <div className="text-white text-3xl font-bold mb-8 text-left w-full max-w-5xl px-4">
       PHILATELIC VIDEOS AND RESOURCES FOR OUR COMMUNITY
@@ -10,7 +10,7 @@ function PhilatelicResources() {
 
     
     <div className="w-full max-w-5xl px-4 mb-8 h-full">
-      <button className="bg-white text-indigo-900 py-2 px-4 rounded-full hover:bg-gray-300">
+      <button className=" text-indigo-900 py-2 px-4 rounded-full hover:bg-gray-300 bg-white">
         Explore StamPick
       </button>
     </div>
@@ -18,7 +18,7 @@ function PhilatelicResources() {
    </div>
    
  <div>
- <div className="flex flex-col lg:flex-row space-y-4 lg:space-y-0 lg:space-x-4 w-full max-w-8xl px-4 h-full p-8 ">
+ <div className="flex flex-col lg:flex-row space-y-4 lg:space-y-0 lg:space-x-4 w-[906px] px-[0px] h-[548px] p-8 ">
       
       <a
         href="https://www.youtube.com/watch?v=example1"
