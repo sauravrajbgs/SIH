@@ -63,7 +63,7 @@ export default function SidebarDemo() {
     },
     {
       label: "Pan Card Information",
-      href: "",
+      href: "#",
       icon: (
         <IconArrowLeft className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0" />
       ),

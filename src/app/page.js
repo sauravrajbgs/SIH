@@ -3,7 +3,7 @@ import { dummyStamps } from "@/utils/StampData";
 import StampGrid from "@/components/StampGrid";
 import SwiperComponent from "@/components/Slider";
 import Spotlight from "@/components/Spotlight";
-import Subscribe from "@/components/Subscribe";
+
 import PhilatelicResources from "@/components/PhilatelicResources";
 import Footers from "@/components/Footers";
 
