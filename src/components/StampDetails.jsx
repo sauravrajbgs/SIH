@@ -36,7 +36,7 @@ const StampDetails = ({ product }) => {
                   </span>
                   <div className="flex flex-row m-4">
                     {/* Creator */}
-                    <div className="flex space-x-2 items-center mr-16">
+                    <div className="flex space-x-2 items-center mr-16 mt-1">
                       <div className="w-8 h-8 bg-purple-700 rounded-full mr-1"></div>
                       <div className="flex flex-col">
                         <span className=" text-gray-400 text-[13px]">

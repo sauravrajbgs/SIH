@@ -43,14 +43,6 @@ function Spotlight() {
     <div className=" w-[608px] h-[943px]">
         
       <h1 className="text-3xl font-bold mb-8 ml-8 italic" >Spotlight</h1>
-      
-       
-       
-     
-
-      
-      
-
         {/* <div className="md:col-span-2 "> */}
           {/* Wrap Image in an <a> tag to make it clickable */}
           <a href="https://economictimes.indiatimes.com/news/politics-and-nation/india-post-to-release-stamps-on-ramayana-mahabharata-ravi-shankar-prasad/articleshow/48775918.cms?from=mdr" target="_blank" rel="noopener noreferrer">
