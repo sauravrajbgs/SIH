@@ -26,7 +26,7 @@ function Page() {
 
   return (
     <div className="flex justify-center items-center h-screen">
-      <div className="flex max-w-5xl w-full h-[90vh] overflow-hidden bg-white">
+      <div className="flex max-w-5xl w-full h-[100vh] overflow-hidden bg-white">
         {/* Left section - image */}
         <div className="hidden md:flex flex-1 items-center justify-center bg-white ml-14">
           <img
