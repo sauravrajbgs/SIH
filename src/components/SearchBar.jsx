@@ -61,7 +61,7 @@ const SearchBar = ({ items }) => {
       {isOpen && (
         <div
           ref={dropdownRef}
-          className="absolute left-0 right-0 mt-2 bg-zinc-800 text-white text-sm rounded-lg shadow-lg transition-transform duration-300 transform scale-y-100 origin-top"
+          className="z-50 absolute left-0 right-0 mt-2 bg-zinc-800 text-white text-sm rounded-lg shadow-lg transition-transform duration-300 transform scale-y-100 origin-top"
         >
           <ul className="py-2">
             {filteredItems.length > 0 ? (

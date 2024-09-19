@@ -1,176 +1,206 @@
-import { Link } from 'lucide-react';
-import React from 'react'
+'use client'
+import React, { useState } from "react";
 
-function Spotlight() {
-    const posts = [
-        {
-          title: "India Post to release stamps on Ramayana, Mahabharata",
-          description:
-            "Government will release stamps on Ramayana, Mahabharata, besides honouring freedom fighters like Batukeshwar Dutt, Sukhdev, Ashfaqulla Khan.",
-          imageUrl:
-            "https://img.etimg.com/thumb/msid-48775918,width-300,height-225,imgsize-265874,resizemode-75/.jpg", // Use actual image URL
-          category: "SPOTLIGHT",
-        },
-       
-       
+const Spotlight = () => {
+  const [selectedTab, setSelectedTab] = useState("all");
+
+  const spotlightData = {
+    all: [
+      {
+        title: "India Post to release stamps on Ramayana,  Mahabharata: Ravi Shankar Prasad",
+        image: "/spotlight/Ramayna.svg",
+        description: "Government will release stamps on Ramayana, Mahabharata, besides honoring freedom fighters.",
+        source: "Powered by StamPick"
+      },
+      {
+        title: "Britain's Royal Mail celebrates 65 years of Paddington",
+        image: "/spotlight/other.svg",
+        description: "Britain’s Royal Mail releases new stamps celebrating Paddington.",
+        source: "Spotlight"
+      },
+      {
+        title: "Britain's Royal Mail celebrates 65 years of Paddington",
+        image: "/spotlight/other.svg",
+        description: "Britain’s Royal Mail releases new stamps celebrating Paddington.",
+        source: "Spotlight"
+      },
+      {
+        title: "Britain's Royal Mail celebrates 65 years of Paddington",
+        image: "/spotlight/other.svg",
+        description: "Britain’s Royal Mail releases new stamps celebrating Paddington.",
+        source: "Spotlight"
+      },
+      {
+        title: "Britain's Royal Mail celebrates 65 years of Paddington",
+        image: "/spotlight/other.svg",
+        description: "Britain’s Royal Mail releases new stamps celebrating Paddington.",
+        source: "Spotlight"
+      }
+    ],
+    news: [
+      {
+        title: "India Post to release stamps on Ramayana,  Mahabharata: Ravi Shankar Prasad",
+        image: "/spotlight/Ramayna.svg",
+        description: "Government will release stamps on Ramayana, Mahabharata, besides honoring freedom fighters.",
+        source: "Powered by StamPick"
+      },
+      {
+        title: "Britain's Royal Mail celebrates 65 years of Paddington",
+        image: "/spotlight/other.svg",
+        description: "Britain’s Royal Mail releases new stamps celebrating Paddington.",
+        source: "Spotlight"
+      },
+      {
+        title: "Britain's Royal Mail celebrates 65 years of Paddington",
+        image: "/spotlight/other.svg",
+        description: "Britain’s Royal Mail releases new stamps celebrating Paddington.",
+        source: "Spotlight"
+      },
+      {
+        title: "Britain's Royal Mail celebrates 65 years of Paddington",
+        image: "/spotlight/other.svg",
+        description: "Britain’s Royal Mail releases new stamps celebrating Paddington.",
+        source: "Spotlight"
+      },
+      {
+        title: "Britain's Royal Mail celebrates 65 years of Paddington",
+        image: "/spotlight/other.svg",
+        description: "Britain’s Royal Mail releases new stamps celebrating Paddington.",
+        source: "Spotlight"
+      }
+    ],
+    interviews: [
+      {
+        title: "India Post to release stamps on Ramayana,  Mahabharata: Ravi Shankar Prasad",
+        image: "/spotlight/Ramayna.svg",
+        description: "Government will release stamps on Ramayana, Mahabharata, besides honoring freedom fighters.",
+        source: "Powered by StamPick"
+      },
+      {
+        title: "Britain's Royal Mail celebrates 65 years of Paddington",
+        image: "/spotlight/other.svg",
+        description: "Britain’s Royal Mail releases new stamps celebrating Paddington.",
+        source: "Spotlight"
+      },
+      {
+        title: "Britain's Royal Mail celebrates 65 years of Paddington",
+        image: "/spotlight/other.svg",
+        description: "Britain’s Royal Mail releases new stamps celebrating Paddington.",
+        source: "Spotlight"
+      },
+      {
+        title: "Britain's Royal Mail celebrates 65 years of Paddington",
+        image: "/spotlight/other.svg",
+        description: "Britain’s Royal Mail releases new stamps celebrating Paddington.",
+        source: "Spotlight"
+      },
+      {
+        title: "Britain's Royal Mail celebrates 65 years of Paddington",
+        image: "/spotlight/other.svg",
+        description: "Britain’s Royal Mail releases new stamps celebrating Paddington.",
+        source: "Spotlight"
+      }
+    ],
+    insights: [
+      {
+        title: "India Post to release stamps on Ramayana,  Mahabharata: Ravi Shankar Prasad",
+        image: "/spotlight/Ramayna.svg",
+        description: "Government will release stamps on Ramayana, Mahabharata, besides honoring freedom fighters.",
+        source: "Powered by StamPick"
+      },
+      {
+        title: "Britain's Royal Mail celebrates 65 years of Paddington",
+        image: "/spotlight/other.svg",
+        description: "Britain’s Royal Mail releases new stamps celebrating Paddington.",
+        source: "Spotlight"
+      },
+      {
+        title: "Britain's Royal Mail celebrates 65 years of Paddington",
+        image: "/spotlight/other.svg",
+        description: "Britain’s Royal Mail releases new stamps celebrating Paddington.",
+        source: "Spotlight"
+      },
+      {
+        title: "Britain's Royal Mail celebrates 65 years of Paddington",
+        image: "/spotlight/other.svg",
+        description: "Britain’s Royal Mail releases new stamps celebrating Paddington.",
+        source: "Spotlight"
+      },
+      {
+        title: "Britain's Royal Mail celebrates 65 years of Paddington",
+        image: "/spotlight/other.svg",
+        description: "Britain’s Royal Mail releases new stamps celebrating Paddington.",
+        source: "Spotlight"
+      }
+    ]
+  };
+
+  const tabs = ["all", "news", "interviews", "insights"];
+
+  return (
+    <div className="bg-[#2B241D] text-white px-10 py-7 rounded-3xl my-10 w-full flex flex-col">
+      <h2 className="text-2xl font-bold mb-4">Spotlight</h2>
+
+     <div className="flex w-full justify-between border-b pb-2 border-b-white border-opacity-10 mb-8 ">
+      <nav className=" flex space-x-4">
+  {tabs.map((tab) => (
+    <button
+      key={tab}
+      className={`text-sm capitalize transition-all duration-300 hover: ${
+        selectedTab === tab
+          ? " border-b-2 pb-2 border-white text-white"
+          : "text-gray-400 pb-2 hover:text-white"
+      }`}
+      onClick={() => setSelectedTab(tab)}
+    >
+      {tab}
+    </button>
+  ))}
+</nav>
+<div className="font-semibold cursor-pointer text-gray-300 transition hover:text-white">View all Posts     ➜</div>
+</div>
+
+      {/* Content */}
+      <div className="flex space-x-16 w-full justify-between">
         
-      ];
-      return(
-        <>
-        < div className='w-full h-[943.95px] bg-[#FF7A0014]'>
-        <div className=''>
-          <h1 className='mx-5  text-2xl font-bold mt-10 ml-5'>Spotlight</h1>
+        <div className="w-[50%] flex flex-col space-y-3">
+          <img
+            className="w-full h- object-cover rounded-lg mb-4"
+            src={spotlightData[selectedTab][0].image}
+            alt={spotlightData[selectedTab][0].title}
+          />
+          <div className="text-[#783A73] text-xs font-semibold">POWERED BY STAMPICK</div>
+          <h3 className="text-3xl font-semibold mb-2 underline underline-offset-4">
+            {spotlightData[selectedTab][0].title}
+          </h3>
+          <p className="text-gray-400 mb-4">
+            {spotlightData[selectedTab][0].description}
+          </p>
+          
         </div>
-        <div className='ml-5 flex justify-between border-b pt-4 py-2 border-gray-300 border-opacity-10 '>
-<div className='flex' >
-  <ul className='flex gap-4'>
-    <li>All</li>
-    <li>News</li>
-    <li>Interviews</li>
-    <li>Insights</li>
-  </ul>
-</div>
-<div className='pr-3'>
-  <p>View latest post --</p>
-</div>
+        <div className="flex flex-col ">
+          {spotlightData[selectedTab].slice(1).map((item, index) => (
+            <div
+              key={index}
+              className=" py-4 flex space-x-4 items-center border-b border-white border-opacity-15"
+            >
+              <div className="flex flex-col space-y-2">
+                <div className="text-[#786B3A] text-sm">SPOTLIGHT</div>
+                <h4 className="text-xl font-bold underline">{item.title}</h4>
+                
+              </div>
+              <img
+                className=" object-contain rounded-lg"
+                src={item.image}
+                alt={item.title}
+              />
+              
+            </div>
+          ))}
         </div>
-        <div className='w-full h-[807px] flex gap-32 mt-4'>
-          <div className='w-[608px] h-[807px] ml-12'>
-          <div className="md:col-span-2">
-            <img
-              className="rounded-lg w-[608px] h-auto"
-              src={posts[0].imageUrl}
-              alt={posts[0].title}
-            />
-             <p className="text-sm text-[#783A73] mt-2">Powered by Stampick</p>
-             <a href='https://www.linns.com/news/world-stamps-postal-history/britain-s-royal-mail-celebrates-65-years-of-paddington-with-sept.-5-issue'>
-             <h2 className="text-4xl font-bold mt-4">{posts[0].title}</h2>
-             </a>
-           
-           
-            <p className=" text-gray-300 mt-3">{posts[0].description}</p>
-          </div>
-          </div>
-          <div className='w-[608px] h-[707.9px]  '>
-            <div className='border-gray-300 border-opacity-5 border-b '>
-            <div className='  flex justify-between  w-[608px] h-[148px]  '>
-           
-              <div className='w-[368px] h-[115.19px] py-[0px] px-[32px]'>
-                <div className='mt-2 text-[#786B3A]'>SPOTLIGHT</div>
-                <div className='text-1.2xl '>
-                  <a href='https://economictimes.indiatimes.com/news/politics-and-nation/india-post-to-release-stamps-on-ramayana-mahabharata-ravi-shankar-prasad/articleshow/48775918.cms?from=mdr '>
-                  <h4>Britain’s Royal Mail celebrates 65 years of Paddington with Sept. 5 issue </h4>
-                  </a>
-                 
-                </div>
-              </div>
-              <div className=' h-[115px] w-[240px]  '>
-                <img className='rounded-[14px] ' src='https://www.linns.com/images/default-source/news/great-britain-2023-paddington-bear-stamps.jpg?sfvrsn=6c070ad1_4' alt="fr"/>
-              </div>
-              
-              
-            </div>
-            
-            
-            </div>
-            <div className='border-gray-300 border-opacity-5 border-b mt-1.5'>
-            <div className='  flex justify-between  w-[608px] h-[148px]  '>
-           
-              <div className='w-[368px] h-[115.19px] py-[0px] px-[32px]'>
-                <div className='mt-2 text-[#786B3A]'>SPOTLIGHT</div>
-                <div className='text-1.2xl '>
-                  <a href='https://www.linns.com/news/world-stamps-postal-history/britain-celebrates-discworld-book-series-with-aug.-10-set'>
-                  <h4>Britain celebrates Discworld book series with Aug. 10 set </h4>
-                  </a>
-                 
-                </div>
-              </div>
-              <div className=' h-[115px] w-[240px]  '>
-                <img className='rounded-[14px] ' src='https://www.linns.com/images/default-source/news/great-britain-terry-pratchett-discworld-first-class-stamps.tmb-slide-1900.jpg?sfvrsn=c7f80bd1_4' alt="fr"/>
-              </div>
-              
-              
-            </div>
-            
-            
-            </div>
-            <div className='border-gray-300 border-opacity-5 border-b mt-1.5'>
-            <div className='  flex justify-between  w-[608px] h-[148px]  '>
-           
-              <div className='w-[368px] h-[115.19px] py-[0px] px-[32px]'>
-                <div className='mt-2 text-[#786B3A]'>SPOTLIGHT</div>
-                <div className='text-1.2xl '>
-                  <a href='https://www.linns.com/news/world-stamps-postal-history/dramatic-designs-highlight-germany-1933-wagner-semipostals'>
-                  <h4>Dramatic designs highlight Germany 1933 Wagner semipostals</h4>
-                  </a>
-                 
-                </div>
-              </div>
-              <div className=' h-[115px] w-[240px]  '>
-                <img className='rounded-[14px] ' src='https://www.linns.com/images/default-source/news/germany-1933-richard-wagner-operas-semipostal-stamp.jpg?sfvrsn=2eae0bd1_4' alt="fr"/>
-              </div>
-              
-              
-            </div>
-            
-            
-            </div>
-            <div className='border-gray-300 border-opacity-5 border-b mt-1.5'>
-            <div className='  flex justify-between  w-[608px] h-[148px]  '>
-           
-              <div className='w-[368px] h-[115.19px] py-[0px] px-[32px]'>
-                <div className='mt-2 text-[#786B3A]'>SPOTLIGHT</div>
-                <div className='text-1.2xl '>
-                  <a href='https://www.linns.com/news/world-stamps-postal-history/details-for-stampex-sept.-27-30-in-london-england '>
-                  <h4>Details for Stampex Sept. 27-30 in London, England </h4>
-                  </a>
-                 
-                </div>
-              </div>
-              <div className=' h-[115px] w-[240px]  '>
-                <img className='rounded-[14px] ' src='https://www.linns.com/images/default-source/news/stampex-international-stamp-show-exhibition08a9664011176df9aa55ff0000be2468.jpg?sfvrsn=e6be0bd1_2' alt="fr"/>
-              </div>
-              
-              
-            </div>
-            
-            
-            </div>
-            <div className='border-gray-300 border-opacity-5 border-b mt-1.5'>
-            <div className='  flex justify-between  w-[608px] h-[148px]  '>
-           
-              <div className='w-[368px] h-[115.19px] py-[0px] px-[32px]'>
-                <div className='mt-2 text-[#786B3A]'>SPOTLIGHT</div>
-                <div className='text-1.2xl '>
-                  <a href='https://www.linns.com/news/world-stamps-postal-history/iceland-stamps-are-back-to-commemorate-150th-anniversary '>
-                  <h4>Iceland stamps are back to commemorate 150th anniversary </h4>
-                  </a>
-                 
-                </div>
-              </div>
-              <div className=' h-[115px] w-[240px]  '>
-                <img className='rounded-[14px] ' src='https://www.linns.com/images/default-source/news/iceland-2023-150th-annversary-first-stamps-souvenir-sheet.jpg?sfvrsn=5e1e0ad1_4' alt="fr"/>
-              </div>
-              
-              
-            </div>
-            
-            
-            </div>
+      </div>
+    </div>
+  );
+};
 
-              
-            
-             
-            
-</div>
-          </div>
-        
-        </div>
-        </>
-      )
-    
- 
-}
-  
-
-export default Spotlight
+export default Spotlight;

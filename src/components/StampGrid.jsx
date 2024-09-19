@@ -10,7 +10,7 @@ const StampGrid = ({ stamps }) => {
       ))}
     </div>
     
-    <div className='p-2 rounded-full bg-[#222528] text-white font-semibold w-4/5 text-center mb-4'>View All Collection    ➜</div>
+    <div className='p-2 rounded-full bg-[#222528] text-white font-semibold w-4/5 text-center mb-4'>View All Collection ➜</div>
     </div>
   );
 };

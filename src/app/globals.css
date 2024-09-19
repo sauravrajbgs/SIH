@@ -197,18 +197,16 @@ button:hover {
   stroke-dasharray: 125.6;
   transform: rotate(-90deg);
 }
-.swiper-button-next, .swiper-button-prev {
-  color: white; /* Change this to any color you like */
-}
+
 
 .swiper-button-next::after, .swiper-button-prev::after {
-  font-size: 20px; /* Change arrow size */
+  font-size: 80px; /* Change arrow size */
   color: white; /* Customize arrow color */
 }
 
 .swiper-pagination {
   position: absolute;
-  bottom: 20px;
+  bottom: 10px;
   left: 0;
   right: 0;
   text-align: center;
@@ -225,3 +223,4 @@ button:hover {
 .swiper-pagination-bullet-active {
   background-color: white !important; /* Active dot color */
 }
+
