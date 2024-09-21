@@ -59,7 +59,8 @@ export default function Home() {
                 <div className="mx-5 border-b pt-4 py-2 border-gray-300 border-opacity-10 text-2xl font-bold">
                   Latest Drops
                 </div>
-                <StampGrid stamps={dummyStamps} />
+                {/* Send only the first 9 stamps */}
+                <StampGrid stamps={dummyStamps.slice(0, 12)} />
               </div>
             </div>
           </div>
