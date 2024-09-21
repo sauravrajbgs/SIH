@@ -10,6 +10,7 @@ import PhilatelicResources from "@/components/PhilatelicResources";
 import Footers from "@/components/Footers";
 import Subscribe from "@/components/Subscribe";
 import TrendingComponent from "@/components/Trending";
+import NoticeBanner from '@/components/NoticeBanner';
 
 export default function Home() {
   // Create refs for Spotlight and StampGrid sections
@@ -40,6 +41,7 @@ export default function Home() {
 
   return (
     <>
+    <NoticeBanner/>
       <div className="px-3">
         <div className="h-[100vh] p-3 mb-10">
           <div className="rounded-lg overflow-hidden relative h-[100vh]">
