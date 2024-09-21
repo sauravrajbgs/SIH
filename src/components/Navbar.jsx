@@ -1,5 +1,5 @@
 'use client';
-import React, { useState } from "react";
+import React from 'react';
 import SearchBar from './SearchBar';
 import Link from 'next/link';
 import { Popup, usePopup } from '@/components/ui/popup';
@@ -20,7 +20,7 @@ function Navbar() {
 
   const user = {
     name: 'John Doe',
-    image: 'https://randomuser.me/api/portraits/men/75.jpg', 
+    image: 'https://randomuser.me/api/portraits/men/75.jpg',
   };
 
   return (
@@ -41,8 +41,8 @@ function Navbar() {
             <Link href="/Seller" className="cursor-pointer">
               Sell
             </Link>
-            <a className="cursor-pointer">Drop</a>
-            <a className="cursor-pointer">Spotlight</a>
+            <a href="/#drops" className="cursor-pointer">Drop</a>
+            <a href="/#spotlight" className="cursor-pointer">Spotlight</a>
           </div>
         </div>
 
