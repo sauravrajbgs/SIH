@@ -7,6 +7,8 @@ import Spotlight from "@/components/Spotlight";
 import PhilatelicResources from "@/components/PhilatelicResources";
 import Footers from "@/components/Footers";
 import Subscribe from "@/components/Subscribe";
+import { Footprints } from "lucide-react";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -30,6 +32,7 @@ export default function Home() {
         <Spotlight/>
         <Subscribe/>
         <PhilatelicResources/>
+        <Footers/>
       </div>  
     </div>
    
