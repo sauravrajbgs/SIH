@@ -1,5 +1,6 @@
 import React from 'react';
 import StampCard from './StampCard';
+import Link from 'next/link';
 
 const StampGrid = ({ stamps }) => {
   return (
@@ -10,7 +11,7 @@ const StampGrid = ({ stamps }) => {
       ))}
     </div>
     
-    <div className='p-2 rounded-full bg-[#222528] text-white font-semibold w-4/5 text-center mb-4'>View All Collection    ➜</div>
+    <Link href={'/collections'} className='w-full flex justify-center'><div className='p-3 rounded-2xl bg-[#222528] text-white font-semibold w-4/5 text-center text-xs mb-4 cursor-pointer hover:bg-white hover:text-[#222528] transition'>View All Collection ➜</div></Link>
     </div>
   );
 };

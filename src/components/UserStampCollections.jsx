@@ -23,8 +23,8 @@ const UserStampCollections = ({user, collections}) => {
                     <button className="text-base focus:outline-none">Created</button>
                     <button className="text-base focus:outline-none">Activity</button>
                     <button className="text-base flex items-center focus:outline-none">
-                        <span>More</span>
-                        <img src='/images/dropdown.svg' className="m-2"/>
+                        <span>More</span> 
+                        <img src='/images/dropdown.svg' className="m-2" alt="fr"/>
                     </button>
                     </div>
 
@@ -35,23 +35,23 @@ const UserStampCollections = ({user, collections}) => {
                         <div className="relative">
                             <button className="bg-[#242527] text-white px-4 py-2 rounded-xl flex items-center">
                             <span>Recently received</span>
-                                <img src='/images/dropdown.svg' className="m-2"/>
+                                <img src='/images/dropdown.svg' className="m-2" alt="fr"/>
                             </button>
                         </div>
 
                         {/* Grid/List View Buttons */}
                         <div className="flex space-x-2">
                             <button className="w-10 h-10 bg-[#242527] flex justify-center items-center rounded-xl">
-                            <img src='/images/4grid.svg'/>
+                            <img src='/images/4grid.svg' alt='fr'/>
                             </button>
                             <button className="w-10 h-10 bg-[#242527] flex justify-center items-center rounded-xl">
-                                <img src='/images/9grid.svg'/>
+                                <img src='/images/9grid.svg' alt="fr"/>
                             </button>
                         </div>
                     </div>
                 </div>
                 <button className="bg-[#242527] px-4 py-2 rounded-xl flex items-center text-white m-4">
-                    <img src='/images/filter.svg' className="m-1"/>
+                    <img src='/images/filter.svg' alt="fr" className="m-1"/>
                     Filters
                 </button>
             </div>

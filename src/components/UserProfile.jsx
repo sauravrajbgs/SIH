@@ -31,13 +31,13 @@ const UserProfile = ({user, collections}) => {
                     {/* Share button */}
                     <div className="w-10 h-10 bg-[#242527] flex justify-center rounded-xl mt-7">
                         <button className="text-gray-400">
-                            <img src='/images/Share.svg' />
+                            <img src='/images/Share.svg' alt="fr" />
                         </button>
                     </div>
                     {/* Options button */}
                     <div className="w-10 h-10 bg-[#242527] flex justify-center rounded-xl mt-7">
                         <button className="text-gray-400">
-                            <img src='/images/Ellipsis.svg' />
+                            <img src='/images/Ellipsis.svg' alt="fr" />
                         </button>
                     </div>
                 </div>

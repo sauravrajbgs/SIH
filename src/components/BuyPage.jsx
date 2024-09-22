@@ -11,7 +11,7 @@ const BuyPage = () => {
                     <span className="font-semibold flex flex-row italic">Explore</span>
                     <span className="text-yellow-400 font-semibold flex flex-row italic ml-1"> 
                         Plus
-                        <img src="/images/plusBuy.svg" className="mt-1 w-3 h-3" />
+                        <img src="/images/plusBuy.svg" alt="fr" className="mt-1 w-3 h-3" />
                     </span>
                 </div>
             </div>
@@ -196,7 +196,7 @@ const BuyPage = () => {
                     </div>
                     <div className='bg-[#FFFFE6] h-[50px] flex flex-row shadow-lg'>
                         <p className="text-black mb-2 p-3">Complete payment</p>
-                        <img src='/images/Group.svg' className='w-6 h-6 mt-3 -m-1' />
+                        <img src='/images/Group.svg' alt="fr" className='w-6 h-6 mt-3 -m-1' />
                         <p className="text-black mb-2 p-3">in: 00:11:54</p>
                     </div>
                     
@@ -209,7 +209,7 @@ const BuyPage = () => {
                                         type="radio"
                                         name="payment"
                                     />
-                                    <img src='/images/UPI.svg' className='ml-4' />
+                                    <img src='/images/UPI.svg' alt="fr" className='ml-4' />
                                     <span className="text-black ml-4 font-semibold">UPI</span>
                                 </div>
                                 <div className='m-5 ml-10'>
@@ -234,7 +234,7 @@ const BuyPage = () => {
                                 name="payment"
                                 className='mt-5'
                             />
-                            <img src='/images/UPI.svg' className='ml-4 mt-6' />
+                            <img src='/images/UPI.svg' alt="fr" className='ml-4 mt-6' />
                             <span className="ml-2 text-black mt-6 font-semibold">Wallets</span>
                             </li>
                             <li className="flex items-center">
@@ -283,7 +283,7 @@ const BuyPage = () => {
                     </div>
                 </div>
                 <div className='w-[870px] mx-auto p-6 bg-white shadow-lg m-4 flex flex-row'>
-                    <img src='/images/+.svg' className='ml-10 mt-4' />
+                    <img src='/images/+.svg' alt="fr" className='ml-10 mt-4' />
                     <button className="mt-4 text-black font-semibold px-4 py-2 rounded-md">Add Gift Card</button>
                 </div>
             </main>

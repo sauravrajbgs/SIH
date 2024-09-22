@@ -7,9 +7,6 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import { cn } from "@/lib/utils";
 import MyOrder from "@/components/Dashboard/MyOrder.jsx";
-// import Profile from "@/components/Dashboard/Profile.jsx";
-// import Settings from "@/components/Dashboard/Settings.jsx";
-// import AddProduct from "@/components/Dashboard/AddProduct.jsx";
 import Listproduct from "@/components/Dashboard/Listproduct.jsx";
 import Vieworder from "@/components/Dashboard/Vieworder.jsx";
 import Dashboard from "@/components/Dashboard/Dashboard.jsx";
@@ -42,6 +39,7 @@ export default function SidebarDemo() {
         <IconUserBolt className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0" />
       ),
     },
+    
     {
       label: "Listproduct",
       href: "#",
@@ -65,7 +63,7 @@ export default function SidebarDemo() {
     },
     {
       label: "Pan Card Information",
-      href: "",
+      href: "#",
       icon: (
         <IconArrowLeft className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0" />
       ),
@@ -121,12 +119,7 @@ export default function SidebarDemo() {
     switch (activeLabel) {
       case "MyOrder":
         return <MyOrder />;
-      case "Profile":
-        return <Profile />;
-      case "Settings":
-        return <Settings />;
-      case "AddProduct":
-        return <AddProduct />;
+     
       case "Listproduct":
         return <Listproduct />;
       case "Vieworder":
@@ -139,15 +132,15 @@ export default function SidebarDemo() {
   return (
     <div
       className={cn(
-        "rounded-md flex flex-col md:flex-row bg-gray-100 dark:bg-neutral-800  flex-1   mx-auto border border-neutral-200 dark:border-neutral-700 overflow-hidden  w-full   px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300",
-        "h-screen "
+        "flex flex-col md:flex-row bg-gray-100 dark:bg-neutral-800  flex-1   mx-auto border border-neutral-200 dark:border-neutral-700  text-gray-900 ",
+        
       )}
     >
       <Sidebar open={open} setOpen={setOpen}>
         <SidebarBody className="justify-between gap-10 scrollbar-hide">
-          <div className="flex flex-col flex-1 overflow-y-auto overflow-x-hidden">
+          <div className="flex flex-col">
             {open ? <Logo /> : <LogoIcon />}
-            <div className="mt-8 flex flex-col gap-2  w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300">
+            <div className="mt-8 flex flex-col gap-2  w-full  text-gray-900 shadow-sm">
               {linkes.map((link) => (
                 <SidebarLink
                   key={link.label}
@@ -156,7 +149,7 @@ export default function SidebarDemo() {
                 />
               ))}
             </div>
-            <div className="mt-8 flex flex-col gap-2  w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300">
+            <div className="mt-8 flex flex-col gap-2  w-full  text-gray-900 shadow-sm">
               {links.map((link) => (
                 <SidebarLink
                   key={link.label}
@@ -165,20 +158,25 @@ export default function SidebarDemo() {
                 />
               ))}
             </div>
-            <div className="mt-8 flex flex-col gap-2 w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300">
-              {wallet.map((link) => (
-                <div key={link.label} className="flex justify-between items-center p-2 rounded-md">
-                  <SidebarLink link={link} onClick={() => setActiveLabel(link.label)} />
-                  <span className="font-medium text-yellow-400">{link.price}</span>
-                </div>
-              ))}
-            </div>
-            <div className="mt-8 flex flex-col gap-2  w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300">
+            <div className="mt-8 flex flex-col gap-2 w-full text-gray-900 shadow-sm">
+  {wallet.map((link) => (
+    <SidebarLink
+      key={link.label}
+      link={link}
+      onClick={() => setActiveLabel(link.label)}
+      className="flex  items-center" 
+    >
+      <span>{link.label}</span>
+      <span className="font-medium text-yellow-400">{link.price}</span>
+    </SidebarLink>
+  ))}
+</div>
+            <div className="mt-8 flex flex-col gap-2  w-full  text-gray-900 shadow-sm">
               {myStuff.map((link) => (
                 <SidebarLink key={link.label} link={link} onClick={() => setActiveLabel(link.label)} />
               ))}
             </div>
-            <div className="mt-8 flex flex-col gap-2  w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300">
+            <div className="mt-8 flex flex-col gap-2  w-full  text-gray-900 shadow-sm">
               {logout.map((link) => (
                 <SidebarLink key={link.label} link={link} onClick={() => setActiveLabel(link.label)} />
               ))}
@@ -186,15 +184,19 @@ export default function SidebarDemo() {
           </div>
         </SidebarBody>
       </Sidebar>
-      <div className="flex flex-1 bg-[#171717]">{renderContent()}</div>
-    </div>
+      <div className="flex w-full bg-[#171717] ">
+        <div className="w-full flex">
+        {renderContent()}
+        </div>
+        </div>
+      </div>
   );
 }
 
 const Logo = () => {
   return (
     <Link href="#" className="font-normal flex space-x-2 items-center text-sm text-black py-1 relative">
-      <div className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 flex-col">
+      <div className="block w-full  text-gray-900 shadow-sm flex-col">
         <SidebarLink
           link={{
             label: "Manu Arora",
@@ -218,7 +220,13 @@ const Logo = () => {
 const LogoIcon = () => {
   return (
     <Link href="#" className="font-normal flex space-x-2 items-center text-sm text-black py-1 relative">
-      <div className="h-5 w-6 bg-black dark:bg-white rounded-br-lg rounded-tr-sm rounded-tl-lg rounded-bl-sm flex-shrink-0" />
+      <Image
+        src="https://assets.aceternity.com/manu.png" // Your profile picture URL here
+        className="h-7 w-7 flex-shrink-0 rounded-full"
+        width={50}
+        height={50}
+        alt="Avatar"
+      />
     </Link>
   );
 };
