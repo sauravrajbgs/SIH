@@ -2,24 +2,24 @@ import React from 'react';
 
 function Footers() {
   return (
-    <footer className="bg-[#191C1F] text-gray-400 py-10">
-      <div className="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
-        <div>
-          <h3 className="text-white mb-4">Stay in the loop</h3>
-          <div className="flex">
+    <footer className=" text-gray-400 py-9 px-20 border-b border-b-white border-opacity-10">
+      <div className="flex space-x-44 text-sm">
+        <div className='w-72'>
+          <h3 className="text-white mb-4 font-bold text-lg ">Stay in the loop</h3>
+          <div className="flex w-full text-sm">
             <input
               type="email"
               placeholder="Your e-mail"
-              className="p-2 w-full rounded-l bg-gray-800 text-white placeholder-gray-500 focus:outline-none"
+              className="p-3 w-full rounded-lg rounded-r-none bg-[#222528] text-white placeholder-opacity-20 focus:outline-none text-xs"
             />
-            <button className="p-2 bg-gray-700 rounded-r text-white hover:bg-gray-600">
+            <button className="p-3  rounded-r-lg text-white bg-[#222528]">
               →
             </button>
           </div>
         </div>
 
         <div>
-          <h3 className="text-white mb-4">Marketplace</h3>
+          <h3 className="text-white mb-4 font-bold text-lg">Marketplace</h3>
           <ul>
             <li className="mb-2">
               <a href="#" className="hover:text-white">Explore</a>
@@ -40,7 +40,7 @@ function Footers() {
         </div>
 
         <div>
-          <h3 className="text-white mb-4">Links</h3>
+          <h3 className="text-white mb-4 font-bold text-lg">Links</h3>
           <ul>
             <li className="mb-2">
               <a href="#" className="hover:text-white">Stampick API</a>
@@ -55,7 +55,7 @@ function Footers() {
         </div>
 
         <div>
-          <h3 className="text-white mb-4">Join us</h3>
+          <h3 className="text-white mb-4 font-bold text-lg">Join us</h3>
           <ul>
             <li className="mb-2">
               <a href="#" className="hover:text-white">X</a>
@@ -70,17 +70,6 @@ function Footers() {
               <a href="#" className="hover:text-white">Farcaster</a>
             </li>
           </ul>
-        </div>
-      </div>
-
-      <div className="border-t border-gray-700 mt-8 pt-4">
-        <div className="container mx-auto flex flex-col md:flex-row justify-between text-gray-500">
-          <p>© Stampick, Inc.</p>
-          <div className="flex space-x-4">
-            <a href="#" className="hover:text-white">Community guidelines</a>
-            <a href="#" className="hover:text-white">Terms</a>
-            <a href="#" className="hover:text-white">Privacy policy</a>
-          </div>
         </div>
       </div>
     </footer>

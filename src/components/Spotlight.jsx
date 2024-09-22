@@ -18,8 +18,7 @@ const Spotlight = () => {
         image: "/spotlight/Philatelist.svg",
         description: "KARNAPEX 2024, which took place in Bengaluru’s Sree Kanteerava Indoor Stadium between the 5th and 8th of January, showcased the cultural richness and historical splendour of stamps.  This 13th state-level philatelic exhibition immersed stamp enthusiasts, offering more than 690 frames filled with stamps that paid tribute to Karnataka’s diverse heritage.",
         source: "Spotlight",
-        link:"https://www.thehindu.com/news/cities/bangalore/philatelists-take-centre-stage-at-karnapex-2024/article67715288.ece"
-      },
+        link:"https://www.thehindu.com/news/cities/bangalore/philatelists-take-centre-stage-at-karnapex-2024/article67715288.ece"      },
       {
         title: "⦁	#NationalPhilatelyDay: The charm of stamp collection that was, and is",
         image: "/spotlight/PhilateyDay.jpg",
@@ -84,7 +83,8 @@ const Spotlight = () => {
         title: "India Post to release stamps on Ramayana,  Mahabharata: Ravi Shankar Prasad",
         image: "/spotlight/Ramayna.svg",
         description: "Government will release stamps on Ramayana, Mahabharata, besides honoring freedom fighters.",
-        source: "Powered by StamPick"
+        source: "Powered by StamPick",
+        link: "https://google.com"
       },
       {
         title: "⦁	Stampex 2023 Visit: ⦁	#philately 43",
@@ -104,8 +104,7 @@ const Spotlight = () => {
         title: "⦁	Detecting counterfeit USPS Forever Stamps with Wayne Youngblood",
         image: "/spotlight/Wayne.jpg",
         description: "Britain’s Royal Mail releases new stamps celebrating Paddington.",
-        source: "Spotlight",
-        link:"https://youtu.be/QjjrnaMGDl0?si=GxtXHzshKFAPUSOI"
+        source: "Spotlight"
       },
       {
         title: "⦁	How To Assess and Break Down a Stamp Collection",
@@ -114,10 +113,9 @@ const Spotlight = () => {
         source: "Spotlight",
         link:"https://youtu.be/-RdTesbKLbs?si=dJyUzNTI2NRyutWx"
       }
-    ],
+    ]
   };
 
- 
   const tabs = ["all", "news", "interviews"];
 
   return (
@@ -145,34 +143,25 @@ const Spotlight = () => {
         </div>
       </div>
 
-{/* Content */}
-<div className="flex space-x-4 w-full justify-between">
-  {/* Left Section */}
-  <div className="w-[42%] flex flex-col space-y-3">
-  <img
-    className="w-full h-80 object-cover rounded-lg mb-4"
-    src={spotlightData[selectedTab][0].image}
-    alt={spotlightData[selectedTab][0].title}
-  />
-  <div className="text-[#783A73] text-xs font-semibold">POWERED BY STAMPICK</div>
-  <h3 className="text-2xl font-semibold mb-2">
-    <a
-      href={spotlightData[selectedTab][0].link}
-      className="text-white underline"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      {spotlightData[selectedTab][0].title}
-    </a>
-  </h3>
-  <p className="text-gray-400 mb-4">
-    {spotlightData[selectedTab][0].description}
-  </p>
-</div>
-
-
-  {/* Right Section */}
-  <div className="flex flex-col space-y-4 w-[50%]">
+      {/* Content */}
+      <div className="flex space-x-16 w-full justify-between">
+        
+        <div className="w-[50%] flex flex-col space-y-3">
+          <img
+            className="w-full h- object-cover rounded-lg mb-4"
+            src={spotlightData[selectedTab][0].image}
+            alt={spotlightData[selectedTab][0].title}
+          />
+          <div className="text-[#783A73] text-xs font-semibold">POWERED BY STAMPICK</div>
+          <a href={spotlightData[selectedTab][0].link}><h3 className="text-3xl font-semibold mb-2 underline underline-offset-4">
+            {spotlightData[selectedTab][0].title}
+          </h3></a>
+          <p className="text-gray-400 mb-4">
+            {spotlightData[selectedTab][0].description}
+          </p>
+          
+        </div>
+        <div className="flex flex-col space-y-4 w-[50%]">
   {spotlightData[selectedTab].slice(1).map((item, index) => (
     <div
       key={index}
@@ -182,7 +171,7 @@ const Spotlight = () => {
         <div className="text-[#786B3A] text-sm">SPOTLIGHT</div>
         <a
           href={item.link}
-          className="text-lg font-bold underline text-white mr-6"
+          className="text-lg font-bold underline text-white"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -190,7 +179,7 @@ const Spotlight = () => {
         </a>
       </div>
       <img
-        className="w-[400px] h-[105px] object-cover rounded-2xl "
+        className="w-[400px] h-[105px] object-cover rounded-2xl ml-4" // Added ml-4 here
         src={item.image}
         alt={item.title}
       />
@@ -198,9 +187,7 @@ const Spotlight = () => {
   ))}
 </div>
 
-
-</div>
-
+      </div>
     </div>
   );
 };
