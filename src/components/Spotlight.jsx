@@ -22,21 +22,21 @@ const Spotlight = () => {
       },
       {
         title: "Britain's Royal Mail celebrates 65 years of Paddington",
-        image: "/spotlight/other.svg",
+        image: "/spotlight/1.jpg",
         description: "Britain’s Royal Mail releases new stamps celebrating Paddington.",
         source: "Spotlight",
         link: "https://google.com"
       },
       {
         title: "Britain's Royal Mail celebrates 65 years of Paddington",
-        image: "/spotlight/other.svg",
+        image: "/spotlight/2.jpg",
         description: "Britain’s Royal Mail releases new stamps celebrating Paddington.",
         source: "Spotlight",
         link: "https://google.com"
       },
       {
         title: "Britain's Royal Mail celebrates 65 years of Paddington",
-        image: "/spotlight/other.svg",
+        image: "/spotlight/3.jpg",
         description: "Britain’s Royal Mail releases new stamps celebrating Paddington.",
         source: "Spotlight",
         link: "https://google.com"
@@ -205,13 +205,13 @@ const Spotlight = () => {
               key={index}
               className=" py-4 flex space-x-4 items-center border-b border-white border-opacity-15"
             >
-              <div className="flex flex-col space-y-2 w-3/5">
+              <div className="flex flex-col space-y-2 w-auto">
                 <div className="text-[#786B3A] text-sm">SPOTLIGHT</div>
                 <a href={item.link} target="blank"><h4 className="text-xl font-bold underline">{item.title}</h4></a>
                 
               </div>
               <img
-                className=" object-contain rounded-lg w-2/5"
+                className=" object-contain rounded-lg w-56"
                 src={item.image}
                 alt={item.title}
               />

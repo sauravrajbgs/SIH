@@ -30,7 +30,7 @@ function Navbar() {
         <AiScan />
       </Popup>
 
-      <div className="flex p-3 items-center text-sm justify-between">
+      <div className="flex p-3 items-center text-sm justify-between ">
         <div className="flex space-x-4 items-center">
           <Link href="/">
             <img src="/images/logo.svg" alt="Logo" />
